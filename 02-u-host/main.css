@@ -1,14 +1,3 @@
-* {
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-}
-
 #product-overview h1 {
   color: white;
   font-family: "Anton", sans-serif;
@@ -23,6 +12,12 @@ body {
 
 .section-title {
   color: #2ddf5c;
+  text-align: center;
+}
+
+.plan__list {
+  width: 80%;
+  margin: auto;
   text-align: center;
 }
 
@@ -51,6 +46,22 @@ body {
   border-radius: 8px;
 }
 
+.plan__title {
+  color: #0e4f1f;
+}
+
+.plan__price {
+  color: #858585;
+}
+
+.plan--highlighted .plan__title {
+  color: white;
+}
+
+.plan--highlighted .plan__price {
+  color: #0e4f1f;
+}
+
 .plan__features {
   margin: 0;
   padding: 0;
@@ -60,62 +71,35 @@ body {
   margin: 8px 0;
 }
 
-.main-header {
-  background-color: #2ddf5c;
-  padding: 8px 16px;
-  width: 100%;
+#key-features .section-title {
+  color: white;
+  margin: 32px;
 }
 
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.main-header__brand {
-  color: #0e4f1f;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 74px);
-  vertical-align: middle;
-}
-
-.main-nav__items {
+.key-feature__list {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
-.main-nav__item {
+.key-feature {
   display: inline-block;
-  margin: 0 16px;
+  width: 30%;
+  vertical-align: top;
 }
 
-.main-nav__item a {
-  color: #0e4f1f;
+.key-feature__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.key-feature__description {
+  text-align: center;
   font-weight: bold;
-  padding: 3px;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
   color: white;
-  border-bottom: 5px solid white;
-}
-
-.main-nav__item--cta a {
-  color: white;
-  background: #ff1b68;
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
-  color: #ff1b68;
-  background: white;
-  border: none;
+  font-size: 20px;
 }
